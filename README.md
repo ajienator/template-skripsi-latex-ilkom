@@ -1,7 +1,7 @@
 Template Naskah Skripsi Menggunakan LaTeX
 ==========================================
 
-Template Naskah Skripsi dengan typesetting LaTeX untuk Jurusan Ilmu Komputer Universitas Negeri Semarang. Universitas Gadjah Mada. Template ini merupakan hasil modifikasi dari versi Departemen Teknik Elektro (Guntur) dan pak Pekik Nurwantoro (FMIPA UGM) dan mas Yohan (T Elektro UGM 2008).
+Template Naskah Skripsi dengan typesetting LaTeX untuk Jurusan Ilmu Komputer Universitas Negeri Semarang. Template ini merupakan hasil modifikasi dari versi Departemen Teknik Elektro (Guntur) dan pak Pekik Nurwantoro (FMIPA UGM) dan mas Yohan (T Elektro UGM 2008).
 
 Semoga bermanfaat. Anda sangat dibolehkan untuk turut berkontribusi dalam project ini dengan *Fork*, *Pull Request*, *Create New Issue*, atau turut menjadi kontributor repo ini.
 
