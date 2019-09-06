@@ -1,0 +1,198 @@
+%-------------------------------------------------------------------------------
+%                      Template Naskah Skripsi Ilmu Komputer
+%               	Berdasarkan format Teknik Informatika FMIPA UNNES
+% 						(c) Aji Purwinarko 
+%-------------------------------------------------------------------------------
+
+%Template pembuatan skripsi.
+\documentclass{skripsi}
+
+% prefiks pada daftar gambar dan tabel
+\usepackage[titles]{tocloft}
+\renewcommand\cftfigpresnum{Gambar\  }
+\renewcommand\cfttabpresnum{Tabel\   }
+
+% hyperlink dan table of content
+\usepackage{hyperref}
+
+\newlength{\mylenf}
+\settowidth{\mylenf}{\cftfigpresnum}
+\setlength{\cftfignumwidth}{\dimexpr\mylenf+2em}
+\setlength{\cfttabnumwidth}{\dimexpr\mylenf+2em}
+
+%Untuk Bold Face pada Keterangan Gambar
+\usepackage[labelfont=bf]{caption}
+
+%Untuk caption dan subcaption
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\usepackage{apacite}
+\usepackage{natbib}
+\bibliographystyle{UNNESapa}
+\AtBeginDocument{
+	\renewcommand{\BBOP}{}
+	\renewcommand{\BBCP}{}
+}
+\setcitestyle{authoryear, open={(},close={)},notesep={: }}
+
+%\usepackage[none]{hyphenat}
+% setting hyphenation pada paragraf
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+%\newcommand\listappendixname{DAFTAR LAMPIRAN}
+%\newcommand\appcaption[1]{%
+%   \addcontentsline{app}{chapter}{#1}}
+%\makeatletter
+%\newcommand\listofappendices{%
+%   \chapter*{\listappendixname}\@starttoc{app}}
+%\makeatother
+
+\newcommand{\listappendicesname}{DAFTAR LAMPIRAN}
+\newlistof{appendices}{apc}{\listappendicesname}
+\newcommand{\appendices}[1]{\addcontentsline{apc}{appendices}{#1}}
+\newcommand{\newappendix}[1]{\section*{#1}\appendices{#1}}
+%\makeatletter
+%\renewcommand\section{\@startsection {section}{1}{\z@}%
+%  {-3.5ex \@plus -1ex \@minus -.2ex}%
+%  {2.3ex \@plus.2ex}%
+%  {\centering\normalfont\Large\bfseries}
+%  }
+%\makeatother
+
+%-----------------------------------------------------------------
+%Disini awal masukan untuk data proposal skripsi
+%-----------------------------------------------------------------
+
+\degree{Sarjana Komputer}
+\yearsubmit{2019}
+\program{Teknik Informatika}
+\dept{Ilmu Komputer}
+
+
+\titleind{Penerapan \textit{Discretization} dan \textit{Correlation Based Feature Selection} untuk \textit{Optimasi Support Vector Machine} dalam \textit{Diagnosis Chronic Kidney Disease}}
+
+\fullname{Pipit Riski Setyorini}
+\idnum{4611413041}
+
+
+% Tanggal Pernyataan
+\statementdate{Agustus 2019}
+
+% Tanggal Persetujuan sidang
+\agreementdate{Agustus 2019}
+
+% Tanggal sidang skripsi
+\approvaldate{3 Agustus 2019}
+
+% Panitia Ujian
+% Ketua
+\dean{Dr Sugianto M.Si}
+\deannip{1961 0219 1993 03 1 001}
+% Sekretaris
+\secretary{Endang Sugiharti S.Si.,M.Kom}
+\secretarynip{1974 0107 1999 03 2 001}
+% Penguji 1
+\examinera{Riza Arifudin S.Pd., M.Cs.}
+\examinernipa{1980 0525 2005 01 1 001}
+% Penguji 2
+\examinerb{Endang Sugiharti S.Si.,M.Kom}
+\examinernipb{1974 0107 1999 03 2 001}
+
+% Pembimbing Utama
+\firstsupervisor{Much Aziz Muslim S.Kom., M.Kom.}
+\firstnip{1974 0420 2008 12 1 001}
+
+\secondsupervisor{}
+\secondnip{}
+
+%-----------------------------------------------------------------
+%Disini akhir masukan untuk data proposal skripsi
+%-----------------------------------------------------------------
+
+\begin{document}
+
+\cover
+
+\statementpage
+
+\agreementpage
+
+\approvalpage
+
+%-----------------------------------------------------------------
+%Disini awal masukan MOTTO dan PERSEMBAHAN
+%-----------------------------------------------------------------
+\include{mottopersembahan}
+
+%\begin{flushright}
+%\emph{Untuk Ibu, Bapak,\\dan Adik-adikku tercinta.}
+%\end{flushright}
+
+%-----------------------------------------------------------------
+%Disini awal masukan untuk Prakata
+%-----------------------------------------------------------------
+\include{prakata}
+
+%-----------------------------------------------------------------
+%Disini awal masukan Intisari
+%-----------------------------------------------------------------
+\include{abstrak}
+%-----------------------------------------------------------------
+%Disini akhir masukan untuk muka skripsi
+%-----------------------------------------------------------------
+\tableofcontents
+\addcontentsline{toc}{chapter}{DAFTAR ISI}
+\listoftables
+\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+\listoffigures
+\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+
+\addcontentsline{toc}{chapter}{DAFTAR LAMPIRAN}
+%daftar lampiran
+\listofappendices
+\selectlanguage{bahasa}\clearpage\pagenumbering{arabic}\setcounter{page}{1}
+
+
+\include{bab1}
+
+\include{bab2}
+
+\include{bab3}
+
+\include{bab4}
+
+\include{bab5}
+
+%-----------------------------------------------------------------
+%Disini akhir masukan Bab
+%-----------------------------------------------------------------
+
+
+%-----------------------------------------------------------------
+% Disini awal masukan untuk Daftar Pustaka
+% - Daftar pustaka diambil dari file .bib yang ada pada folder ini
+%   juga.
+% - Untuk memudahkan dalam memanajemen dan menggenerate file .bib
+%   gunakan reference manager seperti Mendeley, Zotero, EndNote,
+%   dll.
+%-----------------------------------------------------------------
+
+\bibliography{collection}
+\addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
+
+%-----------------------------------------------------------------
+%Disini akhir masukan Daftar Pustaka
+%-----------------------------------------------------------------
+
+\include{lampiran}
+
+\end{document}
+
