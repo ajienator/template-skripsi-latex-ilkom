@@ -32,7 +32,8 @@ Berikut penjelasan dari file-file utama dalam template ini. File lain yang tidak
 		template-skripsi-latex-ilkom/
 			├── image/
 			│	   ├── unnes.png
-			│	   └── wsn.png
+			│	   ├── wsn.png
+			│	   └── Screen Shot 2019-09-06 at 8.27.56 AM.png
 			├── mottopersembahan.tex
 			├── prakata.tex
 			├── abstrak.tex
@@ -88,7 +89,7 @@ File yang berisi aturan-aturan format skripsi. Contoh, format cover, halaman pen
 Jika anda ingin memodifikasi template skripsi ini, ubahlah file *skripsi.cls*.
 
 ### image/
-Masukkan gambar-gambar pada skripsi anda di folder ini. Gambar default: unnes.png (dipakai di cover) dan wsn.png (hanya dipakai di template awal, silakan dihapus jika tidak diperlukan).
+Masukkan gambar-gambar pada skripsi anda di folder ini. Gambar default: unnes.png (dipakai di cover) dan wsn.png (hanya dipakai di template awal, silakan dihapus jika tidak diperlukan). Screen Shot 2019-09-06 at 8.27.56 AM.png merupakan setting dari texmaker, supaya bibliografi muncul saat di lakukan kompilasi.
 			
 
 Lisensi
