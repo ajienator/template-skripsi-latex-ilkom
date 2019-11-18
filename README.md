@@ -25,6 +25,14 @@ Quick Start
 	- [Bahasa Indonesia](https://www.google.com/search?q=tutorial+menggunakan+latex&oq=tutorial+menggunakan+latex&aqs=chrome..69i57j0.3219j0j7&sourceid=chrome&es_sm=91&ie=UTF-8)
 	- [English](https://www.google.com/search?q=latex+tutorial&oq=latex+tutorial&aqs=chrome..69i57j69i65l3j69i60l2.1884j0j7&sourceid=chrome&es_sm=91&ie=UTF-8)
 
+Minimum Requirements
+--------------------
+
+* texlive-latex-extra
+* texlive-lang-other (Bahasa Indonesia)
+* texlive-fonts-recommended (Font khusus)
+* texlive-bibtex-extra (Sitasi dan Bibliografi)
+
 Contents
 --------
 Berikut penjelasan dari file-file utama dalam template ini. File lain yang tidak tercantum hanya pelengkap dalam repository ini.
