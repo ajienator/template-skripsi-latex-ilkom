@@ -363,30 +363,36 @@ Skripsi ini telah disetujui oleh pembimbing untuk diajukan ke sidang panitia uji
       &   \@titleind \\
     \end{tabular} \\
 \noindent 	disusun oleh\\
-    \begin{tabular}{p{0.5cm} p{13.0cm}}
-      &  \@fullname \\
-      &  \@idnum \\
+    \begin{tabular}{p{0.5cm} p{1.5cm} p{10.0cm}}
+     & Nama &  :\@fullname \\
+     & NIM &  :\@idnum \\
     \end{tabular} \\    
 telah dipertahankan di hadapan sidang Panitia Ujian Skripsi FMIPA UNNES pada \@approvaldate
 	
     \vspace{1.0cm}
     \begin{singlespace}
- \noindent  \begin{tabular}{l l l}
-      Panitia: & & \\
-      Ketua & & Sekretaris \\
-      \vspace{0.75cm} & \vspace{0.75cm} & \vspace{0.75cm}\\
-      \@dean & &  \@secretary \\
-      NIP. \@deannip & & NIP. \@secretarynip    \\
-       & & \\
-      Penguji 1 & &  \\
-      \vspace{0.75cm} & \vspace{0.75cm} & \vspace{0.75cm}\\
-      \@examinera  & &  \\
-      NIP. \@examinernipa & &  \\
-       & & \\
-      Penguji 2 & & Pembimbing \\
-      \vspace{0.75cm} & \vspace{0.75cm} & \vspace{0.75cm}\\
-      \@examinerb & &  \@firstsupervisor \\
-      NIP. \@examinernipb & & NIP. \@firstnip  \\
+ \noindent  \begin{tabular}{p{7.2cm} p{7.2cm}}
+      Panitia: & \\
+      Ketua & Sekretaris \\
+      & \\
+      & \\
+      & \\
+      \@dean &  \@secretary \\
+      NIP. \@deannip & NIP. \@secretarynip    \\
+       & \\
+      Penguji 1 &  \\
+      & \\
+      & \\
+      & \\
+      \@examinera  &   \\
+      NIP. \@examinernipa &  \\
+       & \\
+      Penguji 2 &  Pembimbing \\
+      & \\
+      & \\
+      & \\
+      \@examinerb &   \@firstsupervisor \\
+      NIP. \@examinernipb &  NIP. \@firstnip  \\
     \end{tabular}
     \end{singlespace}
 
